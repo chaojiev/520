@@ -25,9 +25,9 @@ body {
     overflow: hidden; /* 隐藏超出容器的文本 */  
     text-overflow: ellipsis; /* 如果文本超出容器，用省略号表示 */  
 } 
-.textone { top: calc((100% - 3em) / 3 * 1.5); }  
-.texttwo { top: calc((100% - 3em) / 3 * 2); }  
-.textthree { top: calc((100% - 3em) / 3 * 2.5); } 
+.textone { top: calc((100% - 3em) / 3 * 1); }  
+.texttwo { top: calc((100% - 3em) / 3 * 1.5); }  
+.textthree { top: calc((100% - 3em) / 3 * 2); } 
 :root {
     --margin-top: 0;
     --margin-left: 0;
