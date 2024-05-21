@@ -1,34 +1,33 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    perspective: 1300px;
-}
-.texttwo {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%);
-}
-.textone {
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    transform: translateX(-50%);
-}
-.textthree {
-    position: absolute;
-    left: 50%;
-    top: 60%;
-    transform: translateX(-50%);
-}
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box; /* 添加这一行以确保padding和border包含在元素的总宽度和高度中 */  
+}  
+  
+body {  
+    height: 100vh;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    position: relative;  
+    overflow: hidden;  
+    perspective: 1300px; 
+}  
+  
+.textone, .texttwo, .textthree {  
+    position: absolute;  
+    left: 50%;  
+    top: calc((100% - 3em) / 3 * (1 - n)); /* 这里的n是1、2、3，分别对应.textone、.texttwo、.textthree */  
+    transform: translateX(-50%);  
+    text-align: center; /* 水平居中文本 */  
+    max-width: 90vw; /* 使用vw单位以适应不同屏幕宽度 */  
+    white-space: nowrap; /* 防止文本换行 */  
+    overflow: hidden; /* 隐藏超出容器的文本 */  
+    text-overflow: ellipsis; /* 如果文本超出容器，用省略号表示 */  
+} 
+.textone { top: calc((100% - 3em) / 3 * 1.5); }  
+.texttwo { top: calc((100% - 3em) / 3 * 2); }  
+.textthree { top: calc((100% - 3em) / 3 * 2.5); } 
 :root {
     --margin-top: 0;
     --margin-left: 0;

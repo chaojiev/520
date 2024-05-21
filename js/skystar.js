@@ -78,10 +78,10 @@ function init(){
         word.classList.add('word');
         word.style.color = '#BAABDA';
         word.style.fontFamily = '楷体';
-        word.style.fontSize = '20px'
+        word.style.fontSize = '3vm'
         word_box.classList.add('word-box');
-        word_box.style.setProperty("--margin-top",randomNum(-40,20)+'vh');
-        word_box.style.setProperty("--margin-left",randomNum(6,35)+'vw');
+        word_box.style.setProperty("--margin-top",randomNum(-32,20)+'vh');
+        word_box.style.setProperty("--margin-left",randomNum(4,40)+'vw');
         word_box.style.setProperty("--animation-duration",randomNum(8,20)+'s');
         word_box.style.setProperty("--animation-delay",randomNum(-20,0)+'s');
         
@@ -109,9 +109,9 @@ let textone = document.querySelector('.textone').querySelector('h1');
           textthree.innerHTML = '所以希望你可以忘记所有的难过与不开心';
       },20000)
       setTimeout(function(){
-        textone.innerHTML = '萱萱，520快乐！！！';
+        textone.innerHTML = '萱萱，520快乐';
         texttwo.innerHTML = '今晚，整片星空将为你一人闪烁';
-        textthree.innerHTML = '愿你永远开心快乐！！！';
+        textthree.innerHTML = '愿你永远开心快乐';
       },30000)
 
 
