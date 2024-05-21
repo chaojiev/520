@@ -80,7 +80,7 @@ function init(){
         word.style.fontFamily = '楷体';
         word.style.fontSize = '3vm'
         word_box.classList.add('word-box');
-        word_box.style.setProperty("--margin-top",randomNum(-43,18)+'vh');
+        word_box.style.setProperty("--margin-top",randomNum(-50,20)+'vh');
         word_box.style.setProperty("--margin-left",randomNum(4,40)+'vw');
         word_box.style.setProperty("--animation-duration",randomNum(8,20)+'s');
         word_box.style.setProperty("--animation-delay",randomNum(-20,0)+'s');
